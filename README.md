@@ -1,6 +1,6 @@
 # RV Activity Disentangler
 
-An interactive laboratory for testing when a low-amplitude Keplerian radial-velocity (RV) signal can survive a simple activity-indicator decorrelation.
+A provenance-first quality and nuisance-correlation audit of 2,000 public NEID Level-2 solar radial-velocity exposures, with the older injection model retained as a controlled test layer.
 
 [![CI](https://github.com/Biswajit1999/rv-activity-disentangler/actions/workflows/ci.yml/badge.svg)](https://github.com/Biswajit1999/rv-activity-disentangler/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -9,15 +9,31 @@ An interactive laboratory for testing when a low-amplitude Keplerian radial-velo
 
 ## Motivation
 
-Stellar photospheres generate RV structure through spots, faculae, convective-blueshift suppression, rotation, and magnetic cycles. A planet candidate is credible only if its Doppler signal can be distinguished from those processes and from the observing window. This repository provides a controlled synthetic experiment: the planet and activity truth are known, so the failure mode of linear decorrelation is visible rather than hidden.
+Stellar photospheres generate RV structure through spots, faculae, convective-blueshift suppression, rotation, and magnetic cycles. A planet candidate is credible only if its Doppler signal can be distinguished from those processes and from the observing window. This repository now starts with the Sun rather than a synthetic planet: a direct NEID TAP query spanning BJD 2459700–2459713, with archive flags, RV uncertainties, extracted S/N, solar altitude, FITS filename, MD5, and pipeline version preserved.
+
+## Real data contract
+
+`scripts/build_neid_solar.py` submits a fixed ADQL query to the official NExScI TAP service. The compact bundle contains all 2,000 returned rows; 635 pass the explicit local analysis rule. Archive exclusions remain visible rather than disappearing during cleaning.
+
+```bash
+python -m pip install -r requirements-data.txt
+python scripts/build_neid_solar.py
+```
+
+Accepted-window RMS and Pearson nuisance diagnostics against S/N and solar altitude are audit signals, not an activity model and not causal evidence.
 
 ## Research question
 
 How do orbital period, stellar rotation period, activity amplitude, and proxy fidelity affect recovery of a planet's RV semi-amplitude?
 
-## Implemented experiment
+## Implemented observational audit
 
-- circular single-planet injection;
+- direct public NEID `neidsolarl2` TAP query with fixed BJD bounds;
+- 2,000 real Level-2 RV metadata rows with file-level lineage;
+- visible archive flags plus a versioned local pass contract;
+- uncertainty, S/N, solar-altitude, pipeline-version, and checksum retention;
+- dense RV/QC timeline and excluded-exposure review queue;
+- circular single-planet injection retained in `src/science.ts` for tests;
 - rotational activity fundamental plus first harmonic;
 - an imperfect activity proxy with configurable fidelity;
 - deterministic sub-metre-per-second measurement structure;
