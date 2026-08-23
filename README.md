@@ -5,6 +5,8 @@ An interactive laboratory for testing when a low-amplitude Keplerian radial-velo
 [![CI](https://github.com/Biswajit1999/rv-activity-disentangler/actions/workflows/ci.yml/badge.svg)](https://github.com/Biswajit1999/rv-activity-disentangler/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+**[Launch the interactive laboratory →](https://biswajit1999.github.io/rv-activity-disentangler/)**
+
 ## Motivation
 
 Stellar photospheres generate RV structure through spots, faculae, convective-blueshift suppression, rotation, and magnetic cycles. A planet candidate is credible only if its Doppler signal can be distinguished from those processes and from the observing window. This repository provides a controlled synthetic experiment: the planet and activity truth are known, so the failure mode of linear decorrelation is visible rather than hidden.
