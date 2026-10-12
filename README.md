@@ -22,6 +22,11 @@ python scripts/build_neid_solar.py
 
 Accepted-window RMS and Pearson nuisance diagnostics against S/N and solar altitude are audit signals, not an activity model and not causal evidence.
 
+The committed observations also support reproducible nightly weighted-
+variability, irregular-cadence structure-function, and quality-cut sensitivity
+analyses. Run `python scripts/analyze_neid_variability.py`; assumptions and
+limits are documented in [`docs/NEID_TEMPORAL_VALIDATION.md`](docs/NEID_TEMPORAL_VALIDATION.md).
+
 ## Research question
 
 How do orbital period, stellar rotation period, activity amplitude, and proxy fidelity affect recovery of a planet's RV semi-amplitude?
