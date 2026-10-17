@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">NEID Solar RV Variability and Quality-Cut Audit</title>
+  <desc id="desc">Editorial scientific cover showing a solar disc, radial-velocity measurements and the reduction from 6.96 to 1.16 metres per second.</desc>
+  <rect width="1200" height="630" fill="#f3f0e8"/>
+  <path d="M0 458H1200M0 518H1200" stroke="#cfd0ca"/>
+  <circle cx="948" cy="206" r="154" fill="#e85d24"/>
+  <circle cx="948" cy="206" r="116" fill="none" stroke="#f3f0e8" stroke-width="2" opacity=".7"/>
+  <path d="M94 440 C155 420 190 455 246 408 S345 352 405 390 492 480 553 410 643 302 706 336 774 424 837 362 907 292 1106 356" fill="none" stroke="#0b796f" stroke-width="8"/>
+  <g fill="#15191d"><circle cx="94" cy="440" r="7"/><circle cx="246" cy="408" r="7"/><circle cx="405" cy="390" r="7"/><circle cx="553" cy="410" r="7"/><circle cx="706" cy="336" r="7"/><circle cx="837" cy="362" r="7"/><circle cx="1106" cy="356" r="7"/></g>
+  <text x="86" y="84" fill="#e85d24" font-family="monospace" font-size="20" letter-spacing="4">NEID SOLAR RV · 2,000 LEVEL-2 EXPOSURES</text>
+  <text x="84" y="175" fill="#15191d" font-family="Georgia,serif" font-size="70" font-weight="700">How quiet is the Sun</text>
+  <text x="84" y="245" fill="#15191d" font-family="Georgia,serif" font-size="70" font-style="italic">after the cut?</text>
+  <text x="84" y="330" fill="#15191d" font-family="Georgia,serif" font-size="55" font-weight="700">6.96 → 1.16 m/s</text>
+  <text x="86" y="365" fill="#606970" font-family="sans-serif" font-size="20">Measured RV RMS across declared S/N thresholds</text>
+  <text x="86" y="575" fill="#606970" font-family="monospace" font-size="18">NIGHTLY VARIABILITY · STRUCTURE FUNCTION · SELECTION SENSITIVITY</text>
+</svg>

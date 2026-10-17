@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this research workbench, please cite it using this metadata."
-title: "RV Activity Disentangler"
+title: "NEID Solar RV Variability and Quality-Cut Audit"
 type: software
 authors:
   - family-names: Jana
     given-names: Biswajit
-version: 1.0.0
-date-released: 2026-08-23
+version: 1.1.0
+date-released: 2026-10-17
 license: MIT
 repository-code: "https://github.com/Biswajit1999/rv-activity-disentangler"
-keywords: [exoplanets, radial velocity, stellar activity, signal processing]
+keywords: [exoplanets, radial velocity, NEID, solar spectroscopy, quality control]

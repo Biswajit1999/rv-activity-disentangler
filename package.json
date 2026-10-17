@@ -1,7 +1,8 @@
 {
   "name": "rv-activity-disentangler",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "description": "A reproducible variability and quality-selection audit of 2,000 public NEID Level-2 solar radial-velocity exposures.",
   "type": "module",
   "scripts": {
     "dev": "vite",

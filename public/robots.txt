@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://biswajit1999.github.io/rv-activity-disentangler/sitemap.xml
